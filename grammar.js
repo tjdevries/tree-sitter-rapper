@@ -1,5 +1,5 @@
 module.exports = grammar({
-  name: 'sql',
+  name: 'rapper',
 
   extras: $ => [
     /\s\n/,
