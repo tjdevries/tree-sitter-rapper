@@ -37,7 +37,7 @@ VALUES('foo','bar', 3);
       (table_reference
         name: (identifier))
       (keyword_as)
-       table_alias: (identifier)
+      table_alias: (identifier)
       (keyword_values)
       (list
         (literal)
@@ -405,3 +405,26 @@ VALUES('foo','bar', 3);
         (literal)
         (literal)))))
 
+================================================================================
+rapper idents
+================================================================================
+
+INSERT INTO resources (name) VALUES (%string{name})
+
+--------------------------------------------------------------------------------
+
+(program
+  (statement
+    (insert
+      (keyword_insert)
+      (keyword_into)
+      (table_reference
+        (identifier))
+      (list
+        (column
+          (identifier)))
+      (keyword_values)
+      (list
+        (rapper_ident
+          (rapper_type)
+          (rapper_type))))))
