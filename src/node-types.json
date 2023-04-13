@@ -346,7 +346,11 @@
           "named": true
         },
         {
-          "type": "rapper_ident",
+          "type": "rapper_argument",
+          "named": true
+        },
+        {
+          "type": "rapper_return",
           "named": true
         },
         {
@@ -547,7 +551,11 @@
           "named": true
         },
         {
-          "type": "rapper_ident",
+          "type": "rapper_argument",
+          "named": true
+        },
+        {
+          "type": "rapper_return",
           "named": true
         },
         {
@@ -648,7 +656,11 @@
             "named": true
           },
           {
-            "type": "rapper_ident",
+            "type": "rapper_argument",
+            "named": true
+          },
+          {
+            "type": "rapper_return",
             "named": true
           },
           {
@@ -740,7 +752,11 @@
             "named": true
           },
           {
-            "type": "rapper_ident",
+            "type": "rapper_argument",
+            "named": true
+          },
+          {
+            "type": "rapper_return",
             "named": true
           },
           {
@@ -826,7 +842,11 @@
             "named": true
           },
           {
-            "type": "rapper_ident",
+            "type": "rapper_argument",
+            "named": true
+          },
+          {
+            "type": "rapper_return",
             "named": true
           },
           {
@@ -912,7 +932,11 @@
             "named": true
           },
           {
-            "type": "rapper_ident",
+            "type": "rapper_argument",
+            "named": true
+          },
+          {
+            "type": "rapper_return",
             "named": true
           },
           {
@@ -1062,7 +1086,11 @@
             "named": true
           },
           {
-            "type": "rapper_ident",
+            "type": "rapper_argument",
+            "named": true
+          },
+          {
+            "type": "rapper_return",
             "named": true
           },
           {
@@ -1254,7 +1282,11 @@
             "named": true
           },
           {
-            "type": "rapper_ident",
+            "type": "rapper_argument",
+            "named": true
+          },
+          {
+            "type": "rapper_return",
             "named": true
           },
           {
@@ -1388,7 +1420,11 @@
           "named": true
         },
         {
-          "type": "rapper_ident",
+          "type": "rapper_argument",
+          "named": true
+        },
+        {
+          "type": "rapper_return",
           "named": true
         },
         {
@@ -1489,7 +1525,11 @@
             "named": true
           },
           {
-            "type": "rapper_ident",
+            "type": "rapper_argument",
+            "named": true
+          },
+          {
+            "type": "rapper_return",
             "named": true
           },
           {
@@ -1724,7 +1764,11 @@
           "named": true
         },
         {
-          "type": "rapper_ident",
+          "type": "rapper_argument",
+          "named": true
+        },
+        {
+          "type": "rapper_return",
           "named": true
         },
         {
@@ -2356,7 +2400,11 @@
             "named": true
           },
           {
-            "type": "rapper_ident",
+            "type": "rapper_argument",
+            "named": true
+          },
+          {
+            "type": "rapper_return",
             "named": true
           },
           {
@@ -3468,7 +3516,11 @@
           "named": true
         },
         {
-          "type": "rapper_ident",
+          "type": "rapper_argument",
+          "named": true
+        },
+        {
+          "type": "rapper_return",
           "named": true
         },
         {
@@ -3573,7 +3625,11 @@
             "named": true
           },
           {
-            "type": "rapper_ident",
+            "type": "rapper_argument",
+            "named": true
+          },
+          {
+            "type": "rapper_return",
             "named": true
           },
           {
@@ -3623,7 +3679,11 @@
       "required": false,
       "types": [
         {
-          "type": "rapper_ident",
+          "type": "rapper_argument",
+          "named": true
+        },
+        {
+          "type": "rapper_return",
           "named": true
         }
       ]
@@ -3938,7 +3998,11 @@
             "named": true
           },
           {
-            "type": "rapper_ident",
+            "type": "rapper_argument",
+            "named": true
+          },
+          {
+            "type": "rapper_return",
             "named": true
           },
           {
@@ -4049,7 +4113,11 @@
             "named": true
           },
           {
-            "type": "rapper_ident",
+            "type": "rapper_argument",
+            "named": true
+          },
+          {
+            "type": "rapper_return",
             "named": true
           },
           {
@@ -4332,7 +4400,11 @@
           "named": true
         },
         {
-          "type": "rapper_ident",
+          "type": "rapper_argument",
+          "named": true
+        },
+        {
+          "type": "rapper_return",
           "named": true
         },
         {
@@ -4442,7 +4514,11 @@
           "named": true
         },
         {
-          "type": "rapper_ident",
+          "type": "rapper_argument",
+          "named": true
+        },
+        {
+          "type": "rapper_return",
           "named": true
         },
         {
@@ -4789,7 +4865,11 @@
           "named": true
         },
         {
-          "type": "rapper_ident",
+          "type": "rapper_argument",
+          "named": true
+        },
+        {
+          "type": "rapper_return",
           "named": true
         },
         {
@@ -4900,7 +4980,11 @@
           "named": true
         },
         {
-          "type": "rapper_ident",
+          "type": "rapper_argument",
+          "named": true
+        },
+        {
+          "type": "rapper_return",
           "named": true
         },
         {
@@ -4942,7 +5026,23 @@
     }
   },
   {
-    "type": "rapper_ident",
+    "type": "rapper_argument",
+    "named": true,
+    "fields": {
+      "type": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "rapper_type",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "rapper_return",
     "named": true,
     "fields": {
       "type": {
@@ -5789,7 +5889,11 @@
             "named": true
           },
           {
-            "type": "rapper_ident",
+            "type": "rapper_argument",
+            "named": true
+          },
+          {
+            "type": "rapper_return",
             "named": true
           },
           {
@@ -5956,7 +6060,11 @@
             "named": true
           },
           {
-            "type": "rapper_ident",
+            "type": "rapper_argument",
+            "named": true
+          },
+          {
+            "type": "rapper_return",
             "named": true
           },
           {
@@ -6162,7 +6270,11 @@
             "named": true
           },
           {
-            "type": "rapper_ident",
+            "type": "rapper_argument",
+            "named": true
+          },
+          {
+            "type": "rapper_return",
             "named": true
           },
           {

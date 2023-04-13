@@ -409,7 +409,7 @@ VALUES('foo','bar', 3);
 rapper idents
 ================================================================================
 
-INSERT INTO resources (name) VALUES (%string{name})
+INSERT INTO resources (name) VALUES (%string{name}) RETURNING @int{id}
 
 --------------------------------------------------------------------------------
 
@@ -425,6 +425,13 @@ INSERT INTO resources (name) VALUES (%string{name})
           (identifier)))
       (keyword_values)
       (list
-        (rapper_ident
+        (rapper_argument
           (rapper_type)
-          (rapper_type))))))
+          (rapper_type))))
+    (returning
+      (keyword_returning)
+      (select_expression
+        (term
+          (rapper_return
+            (rapper_type)
+            (rapper_type)))))))

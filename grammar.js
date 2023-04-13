@@ -1837,7 +1837,8 @@ module.exports = grammar({
         $.interval,
         $.between_expression,
         seq("(", $._expression, ")"),
-        $.rapper_ident,
+        $.rapper_argument,
+        $.rapper_return,
       )
     ),
 
@@ -1967,12 +1968,20 @@ module.exports = grammar({
     identifier: $ => choice(
       $._identifier,
       seq('`', $._identifier, '`'),
-      $.rapper_ident
+      $.rapper_argument,
+      $.rapper_return,
     ),
     _identifier: _ => /([a-zA-Z_][0-9a-zA-Z_]*)/,
 
-    rapper_ident: $ => seq(
+    rapper_argument: $ => seq(
         field('type', alias(seq('%', $._identifier), $.rapper_type)),
+        optional('?'),
+        '{', field('ident', $._identifier), '}'
+    ),
+
+    rapper_return: $ => seq(
+        field('type', alias(seq('@', $._identifier), $.rapper_type)),
+        optional('?'),
         '{', field('ident', $._identifier), '}'
     ),
 
