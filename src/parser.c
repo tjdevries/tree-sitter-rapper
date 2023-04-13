@@ -9,7 +9,7 @@
 #define STATE_COUNT 3009
 #define LARGE_STATE_COUNT 612
 #define SYMBOL_COUNT 501
-#define ALIAS_COUNT 0
+#define ALIAS_COUNT 1
 #define TOKEN_COUNT 297
 #define EXTERNAL_TOKEN_COUNT 0
 #define FIELD_COUNT 29
@@ -517,6 +517,7 @@ enum {
   aux_sym_invocation_repeat1 = 498,
   aux_sym_from_repeat1 = 499,
   aux_sym_order_by_repeat1 = 500,
+  alias_sym_rapper_ident = 501,
 };
 
 static const char * const ts_symbol_names[] = {
@@ -1021,6 +1022,7 @@ static const char * const ts_symbol_names[] = {
   [aux_sym_invocation_repeat1] = "invocation_repeat1",
   [aux_sym_from_repeat1] = "from_repeat1",
   [aux_sym_order_by_repeat1] = "order_by_repeat1",
+  [alias_sym_rapper_ident] = "rapper_ident",
 };
 
 static const TSSymbol ts_symbol_map[] = {
@@ -1525,6 +1527,7 @@ static const TSSymbol ts_symbol_map[] = {
   [aux_sym_invocation_repeat1] = aux_sym_invocation_repeat1,
   [aux_sym_from_repeat1] = aux_sym_from_repeat1,
   [aux_sym_order_by_repeat1] = aux_sym_order_by_repeat1,
+  [alias_sym_rapper_ident] = alias_sym_rapper_ident,
 };
 
 static const TSSymbolMetadata ts_symbol_metadata[] = {
@@ -3532,6 +3535,10 @@ static const TSSymbolMetadata ts_symbol_metadata[] = {
     .visible = false,
     .named = false,
   },
+  [alias_sym_rapper_ident] = {
+    .visible = true,
+    .named = true,
+  },
 };
 
 enum {
@@ -3919,9 +3926,11 @@ static const TSSymbol ts_alias_sequences[PRODUCTION_ID_COUNT][MAX_ALIAS_SEQUENCE
   [28] = {
     [0] = anon_sym_AT,
     [1] = anon_sym_AT,
+    [3] = alias_sym_rapper_ident,
   },
   [29] = {
     [1] = anon_sym_AT,
+    [3] = alias_sym_rapper_ident,
   },
   [31] = {
     [4] = sym_identifier,
@@ -3935,9 +3944,11 @@ static const TSSymbol ts_alias_sequences[PRODUCTION_ID_COUNT][MAX_ALIAS_SEQUENCE
   [46] = {
     [0] = anon_sym_AT,
     [1] = anon_sym_AT,
+    [4] = alias_sym_rapper_ident,
   },
   [47] = {
     [1] = anon_sym_AT,
+    [4] = alias_sym_rapper_ident,
   },
   [50] = {
     [0] = sym_literal,

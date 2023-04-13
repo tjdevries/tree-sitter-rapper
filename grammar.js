@@ -1976,13 +1976,17 @@ module.exports = grammar({
     rapper_argument: $ => seq(
         field('type', alias(seq('%', $._identifier), $.rapper_type)),
         optional('?'),
-        '{', field('ident', $._identifier), '}'
+        '{',
+        field('ident', alias($._identifier, $.rapper_ident)),
+        '}'
     ),
 
     rapper_return: $ => seq(
         field('type', alias(seq('@', $._identifier), $.rapper_type)),
         optional('?'),
-        '{', field('ident', $._identifier), '}'
+        '{',
+        field('ident', alias($._identifier, $.rapper_ident)),
+        '}'
     ),
 
   }

@@ -5029,6 +5029,16 @@
     "type": "rapper_argument",
     "named": true,
     "fields": {
+      "ident": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "rapper_ident",
+            "named": true
+          }
+        ]
+      },
       "type": {
         "multiple": true,
         "required": true,
@@ -5045,6 +5055,16 @@
     "type": "rapper_return",
     "named": true,
     "fields": {
+      "ident": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "rapper_ident",
+            "named": true
+          }
+        ]
+      },
       "type": {
         "multiple": true,
         "required": true,
@@ -7406,6 +7426,10 @@
   {
     "type": "months",
     "named": false
+  },
+  {
+    "type": "rapper_ident",
+    "named": true
   },
   {
     "type": "rapper_type",

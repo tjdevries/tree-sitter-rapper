@@ -10668,8 +10668,13 @@
           "type": "FIELD",
           "name": "ident",
           "content": {
-            "type": "SYMBOL",
-            "name": "_identifier"
+            "type": "ALIAS",
+            "content": {
+              "type": "SYMBOL",
+              "name": "_identifier"
+            },
+            "named": true,
+            "value": "rapper_ident"
           }
         },
         {
@@ -10723,8 +10728,13 @@
           "type": "FIELD",
           "name": "ident",
           "content": {
-            "type": "SYMBOL",
-            "name": "_identifier"
+            "type": "ALIAS",
+            "content": {
+              "type": "SYMBOL",
+              "name": "_identifier"
+            },
+            "named": true,
+            "value": "rapper_ident"
           }
         },
         {

@@ -427,11 +427,13 @@ INSERT INTO resources (name) VALUES (%string{name}) RETURNING @int{id}
       (list
         (rapper_argument
           (rapper_type)
-          (rapper_type))))
+          (rapper_type)
+          (rapper_ident))))
     (returning
       (keyword_returning)
       (select_expression
         (term
           (rapper_return
             (rapper_type)
-            (rapper_type)))))))
+            (rapper_type)
+            (rapper_ident)))))))
