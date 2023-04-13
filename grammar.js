@@ -1966,6 +1966,7 @@ module.exports = grammar({
     identifier: $ => choice(
       $._identifier,
       seq('`', $._identifier, '`'),
+      seq('%', $._identifier, '{', $._identifier, '}'),
     ),
     _identifier: _ => /([a-zA-Z_][0-9a-zA-Z_]*)/,
   }
